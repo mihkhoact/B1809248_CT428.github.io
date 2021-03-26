@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: #f5f0f1;
+}
+.container{
+    width: 60%;
+    margin: 50px auto;
+    font-size: 24px;
+}
+.header{
+    text-align: center;
+    margin: 20px 0;
+}
+.menungang{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.menuc0{
+    width: 80%;
+    margin: auto;
+    position: relative;
+
+}
+.menuc1{
+    font-size: 16px;
+    line-height: 30px;
+    width: 60%;
+    background-color: #ffcf68;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 40px;
+    border-radius: 5px;
+}
+.menuc1 a{
+    
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+.menuc0:hover .menuc1{
+    display: block;
+}
+button:hover{
+    font-weight: 600;
+}
+button{
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px;
+    background-color: #ffc13b;
+    border-radius: 5px;
+}
+ul, li{
+    list-style-type: none;
+    font-size: 18px;
+    padding: 2px;
+}
+.thongtin {
+    margin-top: 50px;
+}
+.thongtin table{
+    margin: auto;
+    color: white;
+    background-color: #79bcc8;
+    border-radius: 5px;
+}
+.thongtin table td{
+    padding: 12px 10px 0 10px;
+}
+.mucluc{
+    padding: 5px;
+    border: 1px solid #ccc;
+    position: fixed;
+    right: 0;
+    top: 500px;
+}
+.mucluc a{
+    text-decoration: none;
+    color: #000;
+}
+
+#html {
+    width: 70%;
+    float: right;
+    margin-bottom: 40px;
+}
+#css{
+    width: 70%;
+    float: left;
+    margin-bottom: 40px;
+}
+#js{
+    width: 70%;
+    float: right;
+    margin-bottom: 40px;
+}
+
+#php{
+    width: 70%;
+    float: left;
+    margin-bottom: 40px;
+}

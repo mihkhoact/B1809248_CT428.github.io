@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ccc;
+}
+
+#wrap{
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(48, 105, 74);
+}
+
+#title{
+    background-image: url('./banner.jpg');
+    background-size: 100%;
+    height: 180px;
+    background-repeat: no-repeat;
+}
+#title h1{
+    text-align: center;
+    line-height: 150px;
+    font-size: 60px;
+    color: yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#menu ul{
+    width: 100%;
+}
+#menu ul li{
+    float: left;
+    list-style-type: none;
+    width: 24.7%;
+    border: dotted 1px yellow;
+    text-align: center;
+    background-color: rgb(73, 73, 73);
+    position: relative;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+#menu ul li ul{
+    display: none;
+}
+#menu ul li ul li{
+    width: 80%;
+}
+#menu a{
+    text-decoration: none;
+    color: yellow;
+}
+#menu ul li:hover ul{
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+#content{
+    clear: both;
+    padding: 5px;
+}
+#content h4{
+    width: 100px;
+    font-weight: 100;
+    font-size: 24px !important;
+    color: yellow;
+    border-bottom: dotted yellow;
+}
+#content h4, p, ul{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#content ul a{
+    color: white;
+}
+#content ul{
+    margin-left: 4rem;
+}
+
+#footer{
+    border-top: 2px dotted #ccc;
+    padding: 0;
+}
+#footer p{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
