@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/Bai2.css">
+    <link rel="stylesheet" type="text/css" href="../Buoi1/css/Bai2.css">
     <title>Bài 2: Form đăng ký</title>
 </head>
 <body>
@@ -28,15 +28,15 @@
                     <table class="bang1">
                         <tr>
                             <td>
-                                <form action="#" method="post">
+                                <form action="dangky.php" method="POST" enctype="multipart/form-data">
                                     <table class="bang2">
                                         <tr>
                                             <td>Tên đăng nhập</td>
-                                            <td><input type="text"></td>
+                                            <td><input type="text" name="tendangnhap"></td>
                                         </tr>
                                         <tr>
                                             <td>Mật khẩu</td>
-                                            <td><input type="password"></td>
+                                            <td><input type="password" name="matkhau"></td>
                                         </tr>
                                         <tr>
                                             <td>Gõ lại mật khẩu</td>
@@ -44,34 +44,34 @@
                                         </tr>
                                         <tr>
                                             <td>Hình đại diện</td>
-                                            <td><input type="file"></td>
+                                            <td><input type="file" name="image_file"></td>
                                         </tr>
                                         <tr>
                                             <td>Giới tính</td>
                                             <td>
-                                                <input type="radio" id="nam" name="gioitinh" value="nam">&nbsp;Nam
-                                                <input type="radio" id="nu" name="gioitinh" value="nu">&nbsp;Nữ
-                                                <input type="radio" id="khac" name="gioitinh" value="khac">&nbsp;Khác
+                                                <input type="radio" name="gioitinh" value="Nam">&nbsp;Nam
+                                                <input type="radio" name="gioitinh" value="Nữ">&nbsp;Nữ
+                                                <input type="radio" name="gioitinh" value="Khác">&nbsp;Khác
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Nghề nghiệp</td>
                                             <td>
-                                                <select>
-                                                    <option value="hs">Học sinh</option>
-                                                    <option value="sv">Sinh viên</option>
-                                                    <option value="gv">Giáo viên</option>
-                                                    <option value="khac">Khác</option>
+                                                <select name="nghenghiep">
+                                                    <option value="Học Sinh">Học sinh</option>
+                                                    <option value="Sinh Viên">Sinh viên</option>
+                                                    <option value="Giáo Viên">Giáo viên</option>
+                                                    <option value="Khác">Khác</option>
                                                 </select>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Sở thích</td>
                                             <td>
-                                                <input type="checkbox" id="tt" name="tt" value="st1">&nbsp;Thể thao 
-                                                <input type="checkbox" id="dl" name="dl" value="st2">&nbsp;Du lịch 
-                                                <input type="checkbox" id="an" name="an" value="st3">&nbsp;Âm nhạc <br>
-                                                <input type="checkbox" id="tt" name="tt" value="st4">&nbsp;Thời trang
+                                                <input type="checkbox" name="sothich[]" value="Thể Thao">&nbsp;Thể thao 
+                                                <input type="checkbox" name="sothich[]" value="Du Lịch">&nbsp;Du lịch 
+                                                <input type="checkbox" name="sothich[]" value="Âm Nhạc">&nbsp;Âm nhạc <br>
+                                                <input type="checkbox" name="sothich[]" value="Thời Trang">&nbsp;Thời trang
                                             </td>
                                         </tr>
                                         <tr>
@@ -89,9 +89,10 @@
                 </td>
             </tr>
         </table>
-        <br>
         <div class="hm_dn">
             <a class="hm" href="../index.html">Trang chủ</a>
+            <a class="dn" href="./Bai2.php">Đăng nhập</a>
         </div>
 </body>
+
 </html>

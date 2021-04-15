@@ -6,6 +6,18 @@
 body{
     background-color: #f5f0f1;
 }
+
+.tt{
+    position: fixed;
+    border: 1px solid #79bcc8;
+    border-radius: 5px;
+    background-color: #79bcc8;
+    padding: 5px;
+}
+.tt a{
+    text-decoration: none;
+    color: yellow;
+}
 .container{
     width: 60%;
     margin: 50px auto;

@@ -51,3 +51,23 @@ input{
     border: none;
     border-radius: 4px;
 }
+
+.hm_dn{
+    width: 15%;
+    margin: 20px auto;
+}
+
+.dn{
+    float: right;
+}
+.hm{
+    float: left;
+}
+
+.hm_dn a{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: slateblue;
+    color: white;
+}
